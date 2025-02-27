@@ -12,6 +12,7 @@ from .cuda._wrapper import (
     quat_scale_to_covar_preci,
     rasterize_to_indices_in_range,
     rasterize_to_pixels,
+    count_imp_wrapper,
     spherical_harmonics,
     world_to_cam,
     fully_fused_projection_2dgs,
@@ -20,6 +21,7 @@ from .cuda._wrapper import (
 )
 from .rendering import (
     rasterization,
+    rasterization_imp,
     rasterization_2dgs,
     rasterization_inria_wrapper,
     rasterization_2dgs_inria_wrapper,
