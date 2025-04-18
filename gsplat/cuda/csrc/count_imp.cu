@@ -242,7 +242,7 @@ std::tuple<torch::Tensor, torch::Tensor, torch::Tensor, torch::Tensor> call_kern
         {C, image_height, image_width}, means2d.options().dtype(torch::kInt32)
     );
     torch::Tensor imps = torch::empty(
-        {N}, means2d.options().dtype(torch::kInt32)
+        {N}, means2d.options().dtype(torch::kFloat32)
     );
 
     at::cuda::CUDAStream stream = at::cuda::getCurrentCUDAStream();
